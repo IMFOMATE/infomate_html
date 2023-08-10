@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="/common/ele-component/common.css">
+<style>
+    @media (width > 480px) and (width < 1280px) {
+
+    }
+    
+    @media (width <= 480px) {
+        .grid > div:first-child {
+            display: block !important;
+            width: 100vw !important;
+            height: 200px !important;
+        }
+        .grid > div:last-child {
+            display: flex !important;
+            width: 100vw !important;
+            height: 40px !important;
+            align-items: center;       
+            justify-content: center;     
+        }
+        
+    }
+
+    .grid{
+        display: table;
+        border-collapse: collapse;
+    }
+    .grid > div:first-child {
+        display: table-cell;
+        vertical-align: middle;
+        width: 60vw;
+        height: 80px;
+        border: 1px solid var(--color-text-content);
+        padding: 15px;
+    }
+    .grid > div:last-child {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 100px;
+        height: 80px;
+        border: 1px solid var(--color-text-content);
+    }
+
+
+</style>
+<body>
+    <div class="grid">
+        <div>
+            <div>직원 이름(<span>직함</span>)</div>
+            <div>캘린더 이름</div>
+            <div>날짜</div>
+        </div>
+        <div style="background-color: aquamarine;">
+            <div>승인</div>
+        </div>
+    </div>
+</body>
+</html>

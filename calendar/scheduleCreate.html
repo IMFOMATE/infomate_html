@@ -1,40 +1,85 @@
-<div>
-    <span>
-        title
-    </span>
-    <span>
-        X
-    </span>
-</div>
-<div>
-    <form>
-        <div>
-            <label>일정명</label> <input type="text">
-        </div>
-        <div>
-        <label>일시</label> 
-            <input type="datetime" name="">
-            <input type="datetime" name="">
-            <input id="all-day" type="checkbox" name=""><label for="all-day">종일</label>
-        </div>
-        <div>
-            <label>캘린더</label>
-            <select>
-                <option>내용 목록</option>
-            </select>
-        </div>
-        <div>
-            <label for="address">장소</label>
-            <input id="address" type="text" >
-        </div>
-        <div>
-            <label for="corp-schedule">전사일정</label>
-            <input id="corp-schedule" type="checkbox">
-        </div>
-        <div>
-            <input type="button" value="상세일정등록" onclick="">
-            <input type="button" value="일정등록" onclick="">
-            <input type="button" value="닫기" onclick="">
-        </div>
-    </form>
+<link rel="stylesheet" type="text/css" href="./common.css">
+<style>
+    @media (width > 480px) and (width < 1280px) {
+
+    }
+    
+    @media (width <= 480px) {
+        .c-create-schedule-date input{
+            display: block !important;
+            row-gap: 1vh;
+            margin: 1vh 0 1vh 0;
+        }
+        .c-create-schedule{
+            height: 300px;
+        }
+
+    }
+
+    .c-create-schedule{
+        display: inline-block;
+        max-width: 30vw;
+        width: 30vw;
+        min-width: 480px;
+        height: 250px;
+        border: 1px solid;
+    }
+    .c-create-schedule-content{
+        text-align: center;
+    }
+    .c-create-schedule-col{
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 120px 50vw;
+        grid-template-rows: repeat(10vw);
+        grid-row-gap: 1vh;   
+        row-gap: 1vh;
+    }
+
+</style>
+<div class="c-create-schedule c-transition03">
+    <div>
+        <span>
+            title
+        </span>
+        <span>
+            X
+        </span>
+    </div>
+    <div class="c-create-schedule-content c-transition03">
+            <form>
+                <div class="c-create-schedule-col c-transition03">
+                    
+                    <label>일정명</label>
+                    <input type="text">
+                
+                
+                    <label>일시</label>
+                
+                    <div class="c-create-schedule-date">
+                        <input type="datetime" name="">
+                        <input type="datetime" name="">
+                        <!-- <div> -->
+                            <input id="all-day" type="checkbox" name="" style="display: inline !important; ">
+                            <label for="all-day">종일</label>
+                        <!-- </div> -->
+                    </div>
+                    <label>캘린더</label>
+                    <select>
+                        <option>내용 목록</option>
+                    </select>
+
+                    <label for="address">장소</label>
+                    <input id="address" type="text" >
+                    
+                    <label for="corp-schedule">전사일정</label>
+                    <input id="corp-schedule" type="checkbox">
+                </div>
+                <div style="border: 1px solid;">
+                    <input type="button" value="상세일정등록" onclick="">
+                    <input type="button" value="일정등록" onclick="">
+                    <input type="button" value="닫기" onclick="">
+                </div>
+            </form>
+    </div>
 </div>
