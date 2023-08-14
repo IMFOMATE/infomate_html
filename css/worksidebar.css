@@ -1,5 +1,5 @@
 /* 사이드바 */
-.sdbr_contain { 
+.bg_contain{ 
     width: 220px;
     height: 800px;
     flex-shrink: 0;
@@ -10,7 +10,7 @@
 }
 
 /* '근태관리' 폰트 */
-.sdbr_manage_pt {  
+.manage_ft {  
     
     color: #535353;
 font-family: Inter;
@@ -21,12 +21,12 @@ line-height: normal;
 }
 
 /* 타이머 */
-.sdbr_timer {
+.timer {
     font-size: 50px;
 }
 
 /* 출퇴근시간 폰트 */
-.sdbr_timer_pt {    
+.timer_ft {    
     color: #535353;
     font-family: Inter;
     font-size: 14px;
@@ -99,7 +99,7 @@ line-height: normal;
 
 
 /* 출퇴근 버튼 */
-.sdbr_button_workoff {
+.wk_wkoffbtn {
 color: #7758FA;
 font-weight: 600;
 background: none;
@@ -119,14 +119,14 @@ cursor: pointer;    /* 마우스 올리면 커서모양 바뀜 */
 
 }
 /* 호버 */
-.sdbr_button_workoff:hover {
+.wk_wkoffbtn:hover {
     background-color: #7758FA;
     color: white;
     font-weight : 400;
 }
 
 /* 근태현황 큰 카테고리 */
-.sdbr_big_category {
+.wk_bigctgr {
     color: #535353;
     font-family: Inter;
     font-size: 16px;
@@ -137,7 +137,7 @@ cursor: pointer;    /* 마우스 올리면 커서모양 바뀜 */
 }
 
 /* 근태현황 작은 카테고리 */
-.sdbr_small_category {
+.wk_smlctgr {
     color: #757575;
     font-family: Inter;
     font-size: 14px;
@@ -148,17 +148,17 @@ cursor: pointer;    /* 마우스 올리면 커서모양 바뀜 */
 }
 
 /* 나란히 */
-.sdbr_button_container {
+.wk_btn_container {
     display: flex;
     gap: 2px
 }
 
 /* 버튼 사이 간격 */
-.sdbr_button_margin {
+.wk_btn_margin {
     margin-bottom: 4px; /* 버튼과 근무상태표시 사이의 간격 설정 */
 }
 
 /* 아이콘 사이즈 */
-.sdbr_icon {
+.wk_icon {
         transform: scale(0.5);
 }

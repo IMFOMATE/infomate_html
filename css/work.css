@@ -1,9 +1,0 @@
-.sdbr_contain { 
-    width: 220px;
-    height: 800px;
-    flex-shrink: 0;
-    border-right: 1px solid #E8E8E8;
-    background: #FFF;
-    padding-left: 30px;
-    padding-top: 5px;
-}
