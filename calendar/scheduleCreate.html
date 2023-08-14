@@ -1,69 +1,80 @@
 <link rel="stylesheet" type="text/css" href="./common.css">
 <style>
-    @media (width > 480px) and (width < 1280px) {
-
-    }
-    
-    @media (width <= 480px) {
-        .c-create-schedule-date input{
-            display: block !important;
-            row-gap: 1vh;
-            margin: 1vh 0 1vh 0;
-        }
-        .c-create-schedule{
-            height: 300px;
-        }
-
-    }
-
     .c-create-schedule{
+        padding: 15px 10px 15px 10px;
+        border-radius: 5px;
         display: inline-block;
-        max-width: 30vw;
-        width: 30vw;
+        max-width: 550px;
+        width: 550px;
         min-width: 480px;
-        height: 250px;
-        border: 1px solid;
+        box-shadow: 0 0 40px rgba(200, 200, 200, 0.4);
     }
+
+    .c-create-schedule-title{
+        display: grid;
+        font-weight: 700;
+        grid-template-columns: 50% 50%;
+        padding: 0 3% 30px 3% ;
+        font-size: 25px;
+
+    }
+
+    .c-create-schedule-close{
+        text-align: end;
+        justify-content: end;
+        color:rgba(125, 125, 125, 0.8);
+    }
+
     .c-create-schedule-content{
         text-align: center;
     }
     .c-create-schedule-col{
-        border: 1px solid black;
+        /* border: 1px solid black; */
+        
         display: grid;
-        grid-template-columns: 120px 50vw;
-        grid-template-rows: repeat(10vw);
+        grid-template-columns: 20% 70%;
         grid-row-gap: 1vh;   
         row-gap: 1vh;
     }
 
+    .c-create-schedule-bottom{
+        margin-top: 30px;
+    }
+    .c-create-schedule-date{
+        text-align: left;
+    }
+
+
 </style>
+<!-- 모바일 버전은 없음 -->
+<div style="margin: 50px;">
 <div class="c-create-schedule c-transition03">
-    <div>
-        <span>
-            title
+    <div class="c-create-schedule-title">
+        <span style="font-size: 30px;">
+            일정 등록
         </span>
-        <span>
+        <span class="c-create-schedule-close">
             X
         </span>
     </div>
     <div class="c-create-schedule-content c-transition03">
             <form>
-                <div class="c-create-schedule-col c-transition03">
-                    
+                <div class="c-create-schedule-col c-transition03">                    
                     <label>일정명</label>
                     <input type="text">
                 
-                
-                    <label>일시</label>
-                
+                    <label style="align-self: center;">일시</label>    
                     <div class="c-create-schedule-date">
-                        <input type="datetime" name="">
-                        <input type="datetime" name="">
-                        <!-- <div> -->
+                        <div>
+                            <input type="datetime-local" name="">
+                        </div>
+                        <div style="text-align: left;">
+                            <input type="datetime-local" name="">
                             <input id="all-day" type="checkbox" name="" style="display: inline !important; ">
                             <label for="all-day">종일</label>
-                        <!-- </div> -->
+                        </div>
                     </div>
+
                     <label>캘린더</label>
                     <select>
                         <option>내용 목록</option>
@@ -73,13 +84,16 @@
                     <input id="address" type="text" >
                     
                     <label for="corp-schedule">전사일정</label>
-                    <input id="corp-schedule" type="checkbox">
+                    <div style="text-align: left;">
+                        <input id="corp-schedule" type="checkbox">
+                    </div>
                 </div>
-                <div style="border: 1px solid;">
+                <div class="c-create-schedule-bottom">
                     <input type="button" value="상세일정등록" onclick="">
                     <input type="button" value="일정등록" onclick="">
                     <input type="button" value="닫기" onclick="">
                 </div>
             </form>
     </div>
+</div>
 </div>
