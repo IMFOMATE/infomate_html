@@ -37,33 +37,77 @@ line-height: normal;
     margin-left: 8px;
 }
 
-/* 근무상태표시 */
-.sdbr_button_status {
-background: none;
-display: flex;
-width: 178px;
-height: 31px;
-justify-content: center;
-align-items: center;
-flex-shrink: 0;
-border-radius: 6px;
-border: 1px solid #7758FA;
-transition: 0.4s;  /* 버튼 위에 마우스 올릴 시 깜빡이는거 */
-cursor: pointer;    /* 마우스 올리면 커서모양 바뀜 */
-}
-/* 호버 */
-.sdbr_button_status:hover {
-    background-color: #7758FA;
-    color: white;}
+/* 근무상태 표시 */
+    .dropstate {
+        color: #7758FA;
+        font-weight: 600;
+        background: none;
+        display: flex;
+        width: 178px;
+        height: 31px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 6px;
+        border: 1px solid #7758FA;
+        transition: 0.4s;  /* 버튼 위에 마우스 올릴 시 깜빡이는거 */
+        cursor: pointer;    /* 마우스 올리면 커서모양 바뀜 */
+        padding-bottom: 2px;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 178px;
+        height: 115px;
+        box-shadow: 0px 4px 8px 0px #7658fa34;
+        z-index: 1;
+        border-radius: 6px;
+        text-align: center;
+        
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 6px 10px;
+        text-decoration: none;
+        display: block;
+        font-size: 13px;
+        font-weight : 600;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #7758FA;
+        color: white;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropstate {
+        background-color: #7758FA;
+        color: white;
+        font-weight : 400;
+      }
 
 
 /* 출퇴근 버튼 */
 .sdbr_button_workoff {
+color: #7758FA;
+font-weight: 600;
 background: none;
 display: flex;
 width: 88px;
 height: 31px;
-padding: 14px 2px;
+/* padding: 14px 2px; */
+padding-bottom: 2px;
 justify-content: center;
 align-items: center;
 gap: 10px;
@@ -72,11 +116,14 @@ border-radius: 6px;
 border: 1px solid #7758FA;
 transition-duration: 0.4s;  /* 버튼 위에 마우스 올릴 시 깜빡이는거 */
 cursor: pointer;    /* 마우스 올리면 커서모양 바뀜 */
+
 }
 /* 호버 */
 .sdbr_button_workoff:hover {
     background-color: #7758FA;
-    color: white;}
+    color: white;
+    font-weight : 400;
+}
 
 /* 근태현황 큰 카테고리 */
 .sdbr_big_category {

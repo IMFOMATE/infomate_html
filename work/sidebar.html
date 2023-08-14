@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>근태관리 사이드바</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/infomate_html//css/worksidebar.css">
     <link rel="stylesheet" href="/infomate_html/css/work.css">
     
@@ -23,7 +22,16 @@
 
     <br>
     
-    <button class="sdbr_button_status hover">근무 상태 표시 ▽</button>
+
+    <div class="dropdown">
+        <button class="dropstate">근무 상태 표시 ▼</button>
+        <div class="dropdown-content">
+        <a href="#">근무중</a>
+        <a href="#">외근중</a>
+        <a href="#">출장중</a>
+        <a href="#">회의중</a>
+        </div>
+      </div>
     <div class="sdbr_button_margin"></div>
 
     <div class="sdbr_button_container">
