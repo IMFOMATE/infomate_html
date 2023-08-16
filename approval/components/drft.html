@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <link rel="stylesheet" href="../../default.css">
+    <link rel="stylesheet" href="../../nav.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        .grid{
+            display: inline-flex;
+        }
+    </style>
+    <body>
+    <div class="wrapper">
+        <span class="menuBtn">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <span class="none">제목</span>
+            </a>
+        </span>
+        <div class="flex">
+            <header>
+                <nav class="nav">
+                    <div class="profile">
+                        <a href="">
+                            <img class="profile-img" src="/user.jpg"/>
+                        </a>
+                        <div class="profile-info">
+                            <p>하이미디어부서</p>
+                            <p>000 사원</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    home
+                                </span>
+                                <span>홈</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    developer_board
+                                </span>
+                                <span>게시판</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    calendar_today
+                                    </span>
+                                <span>스케줄</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    approval
+                                </span>
+                                <span>전자결제</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    home
+                                </span>
+                                <span>근태관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    mail
+                                    </span>
+                                <span>메일</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    group
+                                </span>
+                                <span>조직도</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    library_books
+                                </span>
+                                <span>주소록</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    notifications
+                                </span>
+                                <span>알림</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    mode_comment
+                                </span>
+                                <span>채팅</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="logout">
+                        <a href="#">로그아웃</a>
+                    </div>
+                </nav>
+                <div class="sidemenu">
+                    <div class="side-top">
+                        <h1>제목</h1>
+                        <a href="">글쓰기</a>
+                    </div>
+                    <div class="side-list">
+                        <!-- 메뉴 내용들 추ㄱ가... -->
+                    </div>
+                </div>
+            </header>
+            <main>
+                <h1 class="title">제목~</h1>
+                <div>
+                    <!-- 버튼컴포넌트 위치  -->    
+                </div>
+                <div style="display: flex; "> 
+                    <div style="width: 80%;">
+                        <!-- 문서 컴포넌트 위치 -->
+                        <div>
+                            <h1>문서 제목</h1>
+                            <div style="display: flex; justify-content: space-between;">
+                                <!-- 문서 작성자 -->
+                                <table style="flex-basis: 250px; border: 1px solid black;">
+                                    <colgroup>
+                                        <col width="100">
+		                                <col width="150">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>기안자</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>소속부서</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>기안일</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>문서번호</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="grid">
+                                    <!-- 결재자컴포넌트 -->
+                                    <div style="flex-grow: 1; width: 100px; height: 100%; border: 1px solid #000;">
+
+                                    </div>
+                                    <div style="flex-grow: 1; width: 100px; height: 100%; border: 1px solid #000;">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 파일 컴포넌트 위치 -->
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <div style="width: 20%;">
+                        <!-- document-side  -->
+                    </div>
+                </div>
+            </main>
+        </div>
+        
+        <!-- <footer></footer> -->
+    </div>
+
+    <!-- close 추가해주면됨 (리액트에서 close 추가할수 있도록 useState......)-->
+    <script>
+        const menu = document.querySelector('.menuBtn');
+        const header = document.querySelector('header');
+        const profile = document.querySelector('.profile');
+        menu.addEventListener('click', function(){
+            profile.classList.toggle('close');
+            header.classList.toggle('close');
+        })
+    </script>
+</body>
+</html>

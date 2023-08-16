@@ -1,0 +1,344 @@
+@charset 'euc-kr';
+a:link { font-family:   "±¼¸²Ã¼","µ¸¿ò", seoul;  font-style:normal; color:blue; text-decoration:none; }
+a:visited { font-family:   "±¼¸²Ã¼","µ¸¿ò", seoul;  font-style:normal; color:blue; text-decoration:none; }
+a:hover { font-family:    "±¼¸²Ã¼","µ¸¿ò",seoul;  font-style:normal; color:#666666; }
+body {  font-family:" "±¼¸²Ã¼", µ¸¿ò",seoul;  font-style:normal; color:000000; -webkit-text-size-adjust: none; }
+
+.form {
+	font-family: "±¼¸²Ã¼", "µ¸¿ò" , seoul;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.field {
+	border: 1px solid #000000;
+	font-family:  "±¼¸²Ã¼", "µ¸¿ò",seoul;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+.dot_line {
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	background-image: url(dot_line.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.fieldside_dot {
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	background-image: url(dot_line.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+.fieldside_dot_top {
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	background-image: url(dot_line.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+.fieldside_dot_top_none_right {
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	background-image: url(dot_line.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+.fieldside {
+		font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+.fieldside_rightbottom {
+		font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+.fieldside_bottom {
+		font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+.field_left_right {
+		font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	border-left-color: #666666;
+}
+
+.style2 {
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-weight: bold;
+	color: #333333;
+}
+.style4 {
+	color: #999999;
+	font-family:  "±¼¸²Ã¼", "µ¸¿ò", seoul;
+	font-size: 10px;
+	text-decoration: none;
+}
+.style8 {color: #006699; font-weight: bold; }
+.style9 {color: #666666}
+
+
+.tax_font {
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #444444;
+	text-decoration: none;
+}
+.tax_font11{
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 11px;
+	color: #5255FF;
+	text-decoration: none;
+}
+	.tax_lengthfont11{
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 11px;
+	color: #5255FF;
+	text-decoration: none;
+	line-height: 140%;
+}
+.tax_font10 {
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 9px;
+	color: #5255FF;
+	text-decoration: none;
+}
+.tax_font9 {
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 9px;
+	color: #5255FF;
+	text-decoration: none;
+}
+.tax_font8 {
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 8px;
+	color: #5255FF;
+	text-decoration: none;
+}
+.tax_field {
+	border: 1px solid #0066CC;
+}
+.field_side0065CE {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #0065CE;
+	border-color: #0065CE;
+}
+.tax_field_left {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-color: #0065CE;
+}
+.tax_field_right {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-color: #0065CE;
+}
+.tax_field_top {
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-color: #0065CE;
+}
+.tax_field_bottom {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-color: #0065CE;
+}
+.tax_field_leftbottom {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-color: #0065CE;
+}
+.tax_field_rightbottom {
+	border-top-width: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-color: #0065CE;
+}
+.tax_field_toprightleft {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-color: #000000;
+}
+.tax_padding_left100pro{
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	margin-left: 5px;
+}
+.tax_padding_right100pro{
+	font-family: "±¼¸²Ã¼Ã¼", "µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	margin-right: 5px;
+	text-align: right;
+}
+.line_bottom{
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+}
+.line_right_bottom{
+	font-family:  "±¼¸²Ã¼","µ¸¿ò", seoul;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+}

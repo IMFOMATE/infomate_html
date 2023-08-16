@@ -1,0 +1,251 @@
+	/*설정*/
+	html, body, table{
+		font-family: "Nanum Gothic";
+		font-size: 12px;
+		-webkit-text-size-adjust: none;
+	}
+	
+	p{
+		margin:0px;
+	}
+	
+
+	
+	table{
+		margin:0 auto;
+	}
+	
+	table{
+		border-collapse:collapse;
+	}
+	
+	a{
+		text-decoration:none;
+	}
+	
+	/*기본*/	
+	.form9 {
+		font-size: 12px;
+		color: #000000;
+		text-decoration: none;		
+		letter-spacing:0px;
+		line-height:1.75;
+		border:1px solid #ccc;
+	}
+	
+	.form9 td{
+		border:1px solid #ccc;		
+		padding-left:10px;
+		padding-right:10px;
+
+	}
+	
+	.form9_contents {
+		font-size: 12px;
+		color: #000000;
+		text-decoration: none;		
+		letter-spacing:0px;
+		line-height:1.75;
+		border:1px solid #ccc;
+		table-layout: fixed;
+		word-break: break-all;
+	}
+	
+	.form9_contents td{
+		border:1px solid #ccc;		
+		padding-left:10px;
+		padding-right:10px;
+
+	}
+	
+	.form9_contents td.stitle{
+		background:#edeaf7;
+	}
+	
+	.form9_contents.bordertop2{
+		border-top:2px solid #585170;
+	}
+	
+	.form9_middle{
+		font-size: 12px;
+		color: #000000;
+		text-decoration: none;		
+		letter-spacing:0px;
+		line-height:1.75;
+		border:0px solid #ccc;
+	}
+	
+	.form9_middle td{
+		border:1px solid #ccc;		
+		padding-left:10px;
+		padding-right:10px;
+
+	}
+	
+	.form10 {
+		font-size: 13px;
+		color: #000000;
+		text-decoration: none;
+		letter-spacing:0px;
+		line-height:1.75;
+	}	
+		
+	.form11 {
+		font-size: 14px;
+		color: #000000;
+		text-decoration: none;
+		letter-spacing:0px;
+	}
+	
+	.form16b1 {
+		font-size: 23px;
+		color: #000000;
+		text-decoration: none;
+		font-weight:bold;
+		letter-spacing:1px;
+		text-align:center;
+	}
+	
+
+	
+	
+	/*요소*/
+	.bold {
+		font-weight:bold;
+	}
+	
+	.stitle{
+		height:30px;
+		background:#deebf1;
+		border-right:1px solid #ccc;
+		text-align:center;
+		padding-left:0 !important;
+		padding-right:0 !important;
+	}
+	
+	.bordertop2{
+		border-top:2px solid #333;
+	}
+	
+	.border-right_dotted{
+		border-right:1px solid #ccc;
+	}
+	.blank01{
+	   height:20px;
+	   padding:0;
+	   margin:0;
+	}
+	
+	.inputBox {	
+	  width:100%;
+	  height:100%;
+    }
+	
+	.tmsedit{
+		padding:3px 0;
+		min-height:12px;		
+	}
+	
+
+	
+	.tmsselect{
+		min-height:15px;
+		line-height:15px;
+		padding:3px 0;
+		cursor:pointer;
+	}
+	
+	.middle{
+		font-size: 12px;
+		text-decoration: none;		
+		letter-spacing:0px;
+		line-height:1.75;
+		margin:0 auto;
+	}
+	
+	.minheight50{
+		min-height:50px;
+	}
+	
+	.minheight100{
+		min-height:100px;
+	}
+	
+	.minheight200{
+		min-height:200px;
+	}
+	
+	.minheight300{
+		min-height:300px;
+	}
+	
+	.minheight400{
+		min-height:400px;
+	}
+	
+	.minheight500{
+		min-height:500px;
+	}
+	
+	.minheight600{
+		min-height:600px;
+	}
+	
+	.textleft{
+		text-align:left;
+	}	
+	
+	.textright{
+		text-align:right;
+	}
+	
+	.textcenter{
+		text-align:center;
+	}
+	
+	/*하단*/
+	/*#footer-wrapper{
+		position:relative;
+		width:644px;
+		margin:0 auto;
+	}*/
+	
+	.footer{
+		position:absolute;
+		top:0;
+		right:0;
+		font-size: 11px;
+		color: #666666;
+		text-decoration: none;
+		letter-spacing:0px;
+		line-height:1.75;
+		text-align:right;
+	}
+	
+	
+	/* 스타일 변경 버튼*/
+	
+	
+	#stylechange{
+		width:644px;
+		margin:5px auto;
+		border-top:0px dotted #ccc;
+		border-bottom:0px dotted #ccc;
+		padding-top:5px;
+		padding-bottom:5px;
+		font-size:11px;
+		z-index:2;
+	}
+	
+	#stylechange a{
+		background:none;
+		border:0px solid #ebebeb;
+		margin-bottom:10px;
+		padding:5px 10px;
+		font-size:11px;	
+		text-decoration:none;
+		font-family: "Nanum Gothic";
+		color:#333;
+	}
+	
+	
