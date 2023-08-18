@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../default.css">
     <link rel="stylesheet" href="../../nav.css">
     <link rel="stylesheet" href="../../main.css">
-    <link rel="stylesheet" href="/infomate_html/addressBook/css/addressBook.css">
+    <link rel="stylesheet" href="/infomate_html/addressBook/css/mail.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <body>
     <div class="wrapper">
@@ -119,62 +119,49 @@
                 </nav>
                 <div class="sidemenu">
                     <div class="side-top">
-                        <h1>주소록</h1>
-                        <a href="">연락처 추가</a>
+                        <h1>메일</h1>
+                        <a href="">메일 쓰기</a>
                     </div>
                     <div class="side-list">
                         <!-- 메뉴 내용들 추ㄱ가... -->
-                        <h1 class="full-address-book">전체 주소록 &nbsp;   ></h1>
-                        <p class="list"> • 즐겨찾기</p>
-                        <!-- <p class="list"> • 가족 연락처</p> -->
-                        <p class="list"> • 거래처 연락처</p>
-                        
+                        <h1 class="mailBox">메일함 &nbsp;   ></h1>
+                        <p class="list"> • 받은메일함</p>
+                        <p class="list"> • 보낸메일함</p>
+                        <p class="list"> • 임시보관함</p>
+                        <p class="list"> • 읽은메일함</p>
                     </div>
+
+                    <div class="side-list">
+                        <!-- 메뉴 내용들 추ㄱ가... -->
+                        <h1 class="mailBox2" >휴지통 &nbsp;   ></h1>
+                        <p class="list"> • 휴지통</p>
+
+                    </div>
+                    
                 </div>
             </header>
             <main>
-                <div class="wrapper">
-                <h1 style="color: var(--color-text-title);">전체 주소록</h1>
-                <div class="address-search">
-                    <div class="address-text">이름</div>
-                    <div class="address-text">전화번호</div>
-                    <div class="address-text">메모</div>
-                </div>
-
-                <div class="address-button">
-                    <button style="font-weight: 800; font-size: 15px; color: black;">전체</button>
-                    <button>ㄱ</button>
-                    <button>ㄴ</button>
-                    <button>ㄷ</button>
-                    <button>ㄹ</button>
-                    <button>ㅁ</button>
-                    <button>ㅂ</button>
-                    <button>ㅅ</button>
-                    <button>ㅇ</button>
-                    <button>ㅈ</button>
-                    <button>ㅊ</button>
-                    <button>ㅋ</button>
-                    <button>ㅌ</button>
-                    <button>ㅍ</button>
-                    <button>ㅎ</button>
-                </div>
-
-                <div class="address-subtitle">
-                    <div class="address-name">이름</div>
-                    <div class="address-phone">휴대폰</div>
-                    <div class="address-email">이메일</div>
-                    <div class="address-memo">메모</div>
-                </div>
-
-                <div class="address-content">
-                    <div class="address-name">이기원</div>
-                    <div class="address-phone">010-1234-5678</div>
-                    <div class="address-email">giwon@naver.com</div>
-                    <div class="address-memo">ㅁㄴㅇㅁㄶ</div>
-                </div>
+            <div class="wrapper">
+                <h1 style="color: var(--color-text-title);">메일쓰기</h1>
+                <div class="write-content">
+                    <div class="receiver">
+                        받는사람
+                        <input type="text">
+                    </div>
+                    <div class="reference">
+                        참조
+                        <input type="text">
+                    </div>
+                    <div class="mail-title">
+                        제목
+                        <input type="text">
+                    </div>
+                    <div class="attached-file">
+                        <input type="file">
+                    </div>
 
                 </div>
-                
+            </div>
             </main>
         </div>
         
