@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <link rel="stylesheet" href="../../default.css">
+    <link rel="stylesheet" href="../../nav.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./list_css.css">
+    <style>
+        .approval{
+            display: flex;
+            gap: 30px; 
+            width: 100%;
+            padding: 20px;
+        }
+        .approvalList{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid var(--color-hard);
+            border-radius: 6px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .alert{
+            border: 2px solid var(--color-alert);
+            color: var(--color-alert);
+            font-weight: 800;
+            font-size: 6px;
+            padding: 4px 11px;
+        }
+        .status{
+            border: 2px solid var(--color-success);
+            color: var(--color-success);
+            font-weight: 800;
+            font-size: 6px;
+            padding: 4px 11px;
+        }
+        .content{
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+        .docNum{
+            padding: 8px 0px;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        .title{
+            width: 150px;
+            margin-bottom: 45px;
+            font-size: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .subContent{
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .date{
+            color: var(--color-hard);
+        }
+        .go{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 9px;
+            border-bottom-left-radius: 6px;
+            border-top: 1px solid var(--color-border);
+            border-bottom-right-radius: 6px;
+            font-weight: bold;
+            font-size: 18px;
+            color: var(--color-hard);
+            transition: 0.3s;
+        }
+        .go:hover{
+            background-color: var(--color-hard);
+            color: #fff;
+        }
+        .list_approval{
+            width: 100%;
+        }
+        th{
+            padding: 10px;
+            background-color: var(--color-border);
+            text-align: left;
+            min-width: 50px;
+            
+        }
+        th:last-child{
+            text-align: right;
+        }
+
+        @media screen and (max-width: 1280px){
+            .approval{
+                flex-direction: column;
+            }
+            .approvalList{
+                flex-direction: row;
+                flex-basis: auto ;
+            }
+            .content{
+                flex-grow: 1;
+            }
+            .title{
+                margin: 0;
+                padding-bottom: 8px;
+            }
+            .go{
+                border-top: 0;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border-bottom-left-radius: 0px;
+                border-left: 1px solid var(--color-border);
+            }
+        
+        }
+
+
+    </style>
+    <body>
+    <div class="wrapper">
+        <span class="menuBtn">
+            <a href="#">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+                <span class="none">제목</span>
+            </a>
+        </span>
+        <div class="flex">
+            <header>
+                <nav class="nav">
+                    <div class="profile">
+                        <a href="">
+                            <img class="profile-img" src="/user.jpg"/>
+                        </a>
+                        <div class="profile-info">
+                            <p>하이미디어부서</p>
+                            <p>000 사원</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    home
+                                </span>
+                                <span>홈</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    developer_board
+                                </span>
+                                <span>게시판</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    calendar_today
+                                    </span>
+                                <span>스케줄</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    approval
+                                </span>
+                                <span>전자결제</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    home
+                                </span>
+                                <span>근태관리</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    mail
+                                    </span>
+                                <span>메일</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    group
+                                </span>
+                                <span>조직도</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    library_books
+                                </span>
+                                <span>주소록</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    notifications
+                                </span>
+                                <span>알림</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="material-symbols-outlined icon">
+                                    mode_comment
+                                </span>
+                                <span>채팅</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="logout">
+                        <a href="#">로그아웃</a>
+                    </div>
+                </nav>
+                <div class="sidemenu">
+                    <div class="side-top">
+                        <h1>제목</h1>
+                        <a href="">글쓰기</a>
+                    </div>
+                    <div class="side-list">
+                        <!-- 메뉴 내용들 추ㄱ가... -->
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="maintitle">
+                    <h1>제목~</h1>
+                </div>
+                <!-- approval 컴포넌트 안에 list 두기! -->
+                <section class="approval">
+                    <div class="approvalList">
+                        <div class="content">
+                            <div>
+                                <spa class="alert">긴급</spa>
+                                <span class="status">결재 상태</span>
+                            </div>
+                            <p class="docNum">문서번호-111</p>
+                            <h2 class="title">기안 결재 제목asdfafsddfasadfsdf</h2>
+                            <div class="subContent">
+                                <p class="date">2023-08-08</p>
+                                <p class="name">기안자 ㅇㅇㅇ</p>
+                            </div>
+                        </div>
+                        <a href="" class="go">결재하기</a>
+                    </div>
+                    <div class="approvalList">
+                        <div class="content">
+                            <div>
+                                <spa class="alert">긴급</spa>
+                                <span class="status">결재 상태</span>
+                            </div>
+                            <p class="docNum">문서번호-111</p>
+                            <h2 class="title">기안 결재 제목asdfafsddfasadfsdf</h2>
+                            <div class="subContent">
+                                <p class="date">2023-08-08</p>
+                                <p class="name">기안자 ㅇㅇㅇ</p>
+                            </div>
+                        </div>
+                        <a href="" class="go">결재하기</a>
+                    </div>
+                    <div class="approvalList">
+                        <div class="content">
+                            <div>
+                                <spa class="alert">긴급</spa>
+                                <span class="status">결재 상태</span>
+                            </div>
+                            <p class="docNum">문서번호-111</p>
+                            <h2 class="title">기안 결재 제목asdfafsddfasadfsdf</h2>
+                            <div class="subContent">
+                                <p class="date">2023-08-08</p>
+                                <p class="name">기안자 ㅇㅇㅇ</p>
+                            </div>
+                        </div>
+                        <a href="" class="go">결재하기</a>
+                    </div>
+                    <div class="approvalList">
+                        <div class="content">
+                            <div>
+                                <spa class="alert">긴급</spa>
+                                <span class="status">결재 상태</span>
+                            </div>
+                            <p class="docNum">문서번호-111</p>
+                            <h2 class="title">기안 결재 제목asdfafsddfasadfsdf</h2>
+                            <div class="subContent">
+                                <p class="date">2023-08-08</p>
+                                <p class="name">기안자 ㅇㅇㅇ</p>
+                            </div>
+                        </div>
+                        <a href="" class="go">결재하기</a>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="subtitle">기안문서</h2>
+                    <div>
+                        <table class="list_approval">
+                            <colgroup> 
+                                <col width="15%" /> 
+                                <col width="15%" /> 
+                                <col width="15%" />
+                                <col width="200px"/>
+                                <col width="15%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="list_no">문서번호</th>
+                                    <th >긴급여부</th>
+                                    <th >결재상태</th>
+                                    <th class="t_title">제목</th>
+                                    <th >기안날짜</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>문서번호-111</td>
+                                    <td>긴급</td>
+                                    <td>진행중</td>
+                                    <td class="t_title">ㅁㄴfdadsfsasdfasdfasdfasefsewaf esfasdfasdfv asdfasdfa ffdfㅇㄹ</td>
+                                    <td>2023-08-08</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+        
+        <!-- <footer></footer> -->
+    </div>
+
+    <!-- close 추가해주면됨 (리액트에서 close 추가할수 있도록 useState......)-->
+    <script>
+        const menu = document.querySelector('.menuBtn');
+        const header = document.querySelector('header');
+        const profile = document.querySelector('.profile');
+        menu.addEventListener('click', function(){
+            profile.classList.toggle('close');
+            header.classList.toggle('close');
+        })
+    </script>
+</body>
+</html>

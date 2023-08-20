@@ -9,9 +9,163 @@
     <link rel="stylesheet" href="../../main.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <style>
-        .grid{
+        table{
+            width: 100%;
+        }
+        .inline{
             display: inline-flex;
         }
+
+        td{
+            padding: 5px;
+        }
+
+        tr, td{
+            border: 1px solid #000;
+        }
+
+        tr td:first-child, .tds{
+            background-color: var(--color-border);
+            text-align: center;
+        }
+        .doc_wrapper{
+            display: flex;
+        }
+
+        .docs{
+            padding: 12px;
+            width: 80%;
+        }
+
+        .doc{
+            border: 5px solid var(--color-border);
+            padding: 10px;
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .doc h1{
+            text-align: center;
+        }
+
+        .doc_top{
+            display: flex; 
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .doc_title{
+            padding: 30px;
+            text-align: center;
+        }
+
+        .doc_content{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .dept{
+            width: 100%;
+            padding: 5px;
+        }
+
+        .files{
+            padding: 20px;
+            border: 2px solid var(--color-border);
+        }
+
+        .files label {
+            font-weight: bold;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .files input::file-selector-button{
+            padding: 8px 10px;
+            background-color: transparent;
+            border-radius: 6px;
+            color: var(--color-hard);
+            border: 1px solid var(--color-hard);
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .files input::file-selector-button:hover{
+            background-color: var(--color-hard);
+            color: #fff;
+        }
+        
+
+
+        .doc_side{
+            width: 20%;
+        }
+    </style>
+        
+    <style>
+
+        .credit{
+            flex-grow: 1;
+            width: 100px;
+            height: 100%;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .credit p {
+            width: 100%;
+            padding: 5px 0px;
+        }
+
+        .credit p:first-child, .credit p:nth-child(2){
+            border-bottom: 1px solid #000;
+        }
+
+        .inline::before{
+            content: "승인";
+            background-color: var(--color-border);
+            padding: 2px;
+            writing-mode: vertical-lr;
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .credit p:nth-child(2){
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .credit_name{
+            padding: 2px 0px;
+        }
+
+        @media screen and (max-width: 1280px){
+        
+            .doc_wrapper{
+                flex-direction: column;
+            }
+
+            .docs, .doc_side{
+                width: 100%;
+            }
+        
+        }
+
+        @media screen and (max-width: 760px){
+        
+        .doc_top{
+            flex-direction: column;
+        }
+
+    
+    }
     </style>
     <body>
     <div class="wrapper">
@@ -132,16 +286,19 @@
                 </div>
             </header>
             <main>
-                <h1 class="title">제목~</h1>
-                <div>
-                    <!-- 버튼컴포넌트 위치  -->    
+                <div class="maintitle">
+                    <h1>제목~</h1>
                 </div>
-                <div style="display: flex; "> 
-                    <div style="width: 80%;">
+
+                <div class="doc_wrapper" style="display: flex; "> 
+                    <div class="buttons" style="height: 80px; background-color: #fff;">
+                        <!-- 버튼컴포넌트 위치  -->    
+                    </div>
+                    <div class="docs">
                         <!-- 문서 컴포넌트 위치 -->
-                        <div>
-                            <h1>문서 제목</h1>
-                            <div style="display: flex; justify-content: space-between;">
+                        <div class="doc">
+                            <h2 class="doc_title">문서 제목</h2>
+                            <div class="doc_top">
                                 <!-- 문서 작성자 -->
                                 <table style="flex-basis: 250px; border: 1px solid black;">
                                     <colgroup>
@@ -151,15 +308,15 @@
                                     <tbody>
                                         <tr>
                                             <td>기안자</td>
-                                            <td></td>
+                                            <td>주진선</td>
                                         </tr>
                                         <tr>
                                             <td>소속부서</td>
-                                            <td></td>
+                                            <td>개발팀</td>
                                         </tr>
                                         <tr>
                                             <td>기안일</td>
-                                            <td></td>
+                                            <td>2023-08-08</td>
                                         </tr>
                                         <tr>
                                             <td>문서번호</td>
@@ -167,25 +324,86 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="grid">
+                                <div class="inline">
                                     <!-- 결재자컴포넌트 -->
-                                    <div style="flex-grow: 1; width: 100px; height: 100%; border: 1px solid #000;">
-
+                                    <div class="credit" >
+                                        <p>직위</p>
+                                        <p class="credit_name">
+                                            <img src="../../user.jpg" alt="" style="width: 40px;">
+                                            <span>주진선</span>
+                                        </p>
+                                        <p>날짜</p>
                                     </div>
-                                    <div style="flex-grow: 1; width: 100px; height: 100%; border: 1px solid #000;">
-
+                                    <div class="credit" >
+                                        <p>직위</p>
+                                        <p class="credit_name">
+                                            <img src="../../user.jpg" alt="" style="width: 40px;">
+                                            <span>주진선</span>
+                                        </p>
+                                        <p>날짜</p>
+                                    </div>
+                                    <div class="credit" >
+                                        <p>직위</p>
+                                        <p class="credit_name">
+                                            <img src="../../user.jpg" alt="" style="width: 40px;">
+                                            <span>주진선</span>
+                                        </p>
+                                        <p>날짜</p>
+                                    </div>
+                                    <div class="credit" >
+                                        <p>직위</p>
+                                        <p class="credit_name">
+                                            <img src="../../user.jpg" alt="" style="width: 40px;">
+                                            <span>주진선</span>
+                                        </p>
+                                        <p>날짜</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="doc_content">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>시행일자</td>
+                                            <td>
+                                                <input type="date">
+                                            </td>
+                                            <td class="tds">
+                                                협조부서
+                                            </td>
+                                            <td>
+                                                <select class="dept">
+                                                    <option value="협조부서선택">협조부서선택</option>
+                                                    <option value="경영팀">경영팀</option>
+                                                    <option value="개발팀">개발팀</option>
+                                                    <option value="지원팀">지원팀</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>제목</td>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="제목을 입력해주세요">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 파일 컴포넌트 위치 -->
+                            <div class="files">
+                                <label for="docFile">파일 첨부</label>
+                                <input class="fileBtn" id="docFile" type="file" multiple >
+                            </div>
                         </div>
-                        <!-- 파일 컴포넌트 위치 -->
-                        <div>
-                            
-                        </div>
+                        
                     </div>
-                    <div style="width: 20%;">
+                    <aside class="doc_side">
                         <!-- document-side  -->
-                    </div>
+                    </aside>
                 </div>
             </main>
         </div>
